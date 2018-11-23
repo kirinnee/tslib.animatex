@@ -1,5 +1,4 @@
 let spawn = require('child_process').spawn;
-let fs = require("fs");
 
 //command will be the first argument
 let command = process.argv[2];
@@ -20,7 +19,6 @@ async function Execute(command, args, watch) {
             await run(wp);
             break;
         case "deploy":
-            await run("node script e2e");
             await run("node script wp dist");
             break;
         case "e2e":
