@@ -16,8 +16,7 @@ interface Page{
 export function ConvertToOption(p:Page) : HtmlWebpackPlugin.Options{
 	let opts: HtmlWebpackPlugin.Options = {
 		title: p.title || "Index",
-		filename: p.output || "index.html",
-		chunk: p.chunks || ["index"]
+		filename: p.output || "index.html", chunks: p.chunks || ["index"]
 	};
 	if (p.template) opts.template = path.join("./public", p.template);
 	return opts;
