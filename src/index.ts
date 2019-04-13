@@ -1,4 +1,5 @@
 import {AnimationData, TextAnimation} from "@kirinnee/animate";
+import {AnimX} from "./classLibrary/AnimX";
 
 declare global {
 	interface Element {
@@ -336,4 +337,4 @@ interface AnimateX {
 	AssertExtend(): void;
 }
 
-export {AnimationTransition, AnimateX};
+export {AnimationTransition, AnimateX, AnimX};
