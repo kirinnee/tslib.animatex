@@ -2,6 +2,9 @@
 
 Extend native DOM Elements to allow for Fluent animation API
 
+Source: [GitLab](https://gitlab.com/node-packages-kirin/animatex)
+Mirror: [GitHub](https://github.com/kirinnee/tslib.animatex)
+
 # Getting Started
 
 Install via NPM 
