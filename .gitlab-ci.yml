@@ -1,6 +1,5 @@
 stages:
   - install
-  - test
   - build
   - publish
 
@@ -13,12 +12,6 @@ Install:
   tags:
     - npm
   script: yarn install --prefer-offline
-
-Test:
-  stage: test
-  tags:
-    - npm
-  script: yarn test
 
 Build:
   stage: build

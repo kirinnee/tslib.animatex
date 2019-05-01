@@ -23,7 +23,7 @@ async function Execute(command, args, watch) {
             break;
         case "e2e":
             await run("node script wp e2e");
-            let headless = [
+            let headless = ["chrome:headless"
             ].map(s => `testcafe ${s} ./test/e2e/**/*.test.ts`);
             let real = [
             ].map(s => `testcafe ${s} ./test/e2e/**/*.test.ts`);
